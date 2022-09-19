@@ -1,0 +1,47 @@
+.address-section-list {
+  width: 231px;
+  margin-top: 20px;
+}
+
+.address-section-list .address-section-list__item {
+  list-style-type: none;
+  margin-bottom: 9px;
+}
+
+.address-section-list__item {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--logo-color-footer);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--logo-color-main);
+  }
+}
+
+.address-section-list__item:last-child {
+  margin-bottom: 0px;
+}
+
+.address-section-list__item__link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--footer-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--logo-color-main);
+  }
+}
+
+.address-section-list__item .address-section-list__item__link {
+  text-decoration: none;
+}

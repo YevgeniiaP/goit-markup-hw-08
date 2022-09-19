@@ -1,0 +1,20 @@
+.page-header {
+  border-bottom: 1px solid var(--border-line-color);
+  & span {
+    color: var(--logo-color-main);
+  }
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+  background: var(--logo-color-footer);
+}
+
+.logo-header {
+  width: 145px;
+  margin-top: 25px;
+  margin-bottom: 24px;
+  margin-right: 93px;
+  color: var(--logo-color-header);
+}
