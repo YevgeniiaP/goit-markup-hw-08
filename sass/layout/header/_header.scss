@@ -3,18 +3,21 @@
   & span {
     color: var(--logo-color-main);
   }
+  
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.header-block {
+.header__container {
   display: flex;
   align-items: center;
-  background: var(--logo-color-footer);
 }
 
 .logo-header {
   width: 145px;
   margin-top: 25px;
   margin-bottom: 24px;
-  margin-right: 93px;
   color: var(--logo-color-header);
 }

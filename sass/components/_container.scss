@@ -1,6 +1,19 @@
 .container {
-  width: 1200px;
+  
+  // mobile screen
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
