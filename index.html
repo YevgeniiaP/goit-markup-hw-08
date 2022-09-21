@@ -33,19 +33,27 @@
                      <li class="contacts-list__items">
                         <a href="mailto:info@devstudio.com" class="contacts-list__items__link">
                            <svg class="contacts-icon-mail" width="16px" height="12px">
-                              <use href="./images/icons.svg/symbol-defs.svg#email"></use>
+                              <use href="./images/icons.svg/sprite.svg#headerenvelope"></use>
                            </svg>info@devstudio.com</a>
                      </li>
                   
                      <li class="contacts-list__items">
                         <a href="tel:+380961111111" class="contacts-list__items__link">
                            <svg class="contacts-icon-phone" width="10px" height="16px">
-                              <use href="./images/icons.svg/symbol-defs.svg#smartphone"></use>  
+                              <use href="./images/icons.svg/sprite.svg#headersmartphone"></use>  
                            </svg>+38&nbsp;096&nbsp;111&nbsp;11&nbsp;11</a>
                      </li>
                   </ul>
+             <!-- Mobile menu section -->
+    <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-btn-icon" width="40" height="40">
+        <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
 
          </div>
+               <!-- Mobile menu section -->
+  
       </header>
 
       <!-- Main section -->
@@ -67,7 +75,7 @@
             <li class="benefits-list__items">
                   <div class="benefits-list__icon-container">
                      <svg class="benefits-list__icon-container__icon" width="70px" height="70px"> 
-                        <use href="./images/icons.svg/symbol-defs.svg#featantenna"></use>
+                        <use href="./images/icons.svg/sprite.svg#featantenna"></use>
                      </svg>
                   </div>
                   <h3 class="benefits-list__title">Внимание к деталям</h3> 
@@ -77,7 +85,7 @@
             <li class="benefits-list__items">
                   <div class="benefits-list__icon-container">
                      <svg class="benefits-list__icon-container__icon" width="70px" height="70px">
-                     <use href="./images/icons.svg/symbol-defs.svg#featclock"></use>
+                     <use href="./images/icons.svg/sprite.svg#featclock"></use>
                      </svg>
                   </div>
                   <h3 class="benefits-list__title">Пунктуальность</h3> 
@@ -87,7 +95,7 @@
             <li class="benefits-list__items">
                   <div class="benefits-list__icon-container">
                      <svg class="benefits-list__icon-container__icon" width="70px" height="70px">
-                     <use href="./images/icons.svg/symbol-defs.svg#featdiagra"></use>
+                     <use href="./images/icons.svg/sprite.svg#featdiagram"></use>
                      </svg>
                   </div>
                   <h3 class="benefits-list__title">Планирование</h3> 
@@ -97,7 +105,7 @@
             <li class="benefits-list__items">
                   <div class="benefits-list__icon-container">
                      <svg class="benefits-list__icon-container__icon" width="70px" height="70px">
-                     <use href="./images/icons.svg/symbol-defs.svg#featastronaut"></use>
+                     <use href="./images/icons.svg/sprite.svg#featastronaut"></use>
                      </svg>
                   </div>
                   <h3 class="benefits-list__title">Современные технологии</h3> 
@@ -113,17 +121,17 @@
          <ul class="activity-list">
             <!-- #1 -->
             <li class="activity-list__items">
-               <img src="./images/box_1.jpg" width="370" alt="Написание кода"/>
+               <img srcset="./images/desktop/whattodo-1-1200@1x.jpg 1x, ./images/desktop/whattodo-1-1200@2x.jpg 2x" width="370" height="294" src="./images/desktop/whattodo-1-1200@1x.jpg" width="370" alt="Написание кода"/>
                <p class="activity-list__items__overlay">Десктопные приложения</p>
             </li>
             <!-- #2 -->
             <li class="activity-list__items">
-               <img src="./images/box_2.jpg" width="370" alt="Визуальное оформление"/>
+               <img srcset="./images/desktop/whattodo-2-1200@1x.jpg 1x, ./images/desktop/whattodo-2-1200@2x.jpg 2x" width="370" height="294" src="./images/desktop/whattodo-2-1200@1x.jpg" width="370" alt="Визуальное оформление"/>
                <p class="activity-list__items__overlay">Мобильные приложения</p>
             </li>
             <!-- #3 -->
             <li class="activity-list__items">
-               <img src="./images/box_3.jpg" width="370" alt="Дизайн"/>
+               <img srcset="./images/desktop/whattodo-3-1200@1x.jpg 1x, ./images/desktop/whattodo-3-1200@2x.jpg 2x" width="370" height="294" src="./images/desktop/whattodo-3-1200@1x.jpg" width="370" alt="Дизайн"/>
                <p class="activity-list__items__overlay">Дизайнерские решения</p>
             </li>
          </ul>
@@ -134,90 +142,115 @@
       <div class="container">      
       <h2 class="team-section__title">Наша команда</h2>
       <ul class="team-section__list">
-         <li class="team-section__list__items">         
-               <img src="./images/img_team_1.jpg"
+         <li class="team-section__list__items">   
+            <picture>    
+            <source srcset="./images/mobile/team-1-480@1x.jpg 1x,./images/mobile/team-1-480@2x.jpg 2x" 
+            media="(max-width: 767px)">                                                        
+        <source srcset="./images/tablet/team-1-768@1x.jpg 1x,./images/tablet/team-1-768@2x.jpg 2x"
+            media="(min-width: 768px) and (max-width: 1199px)">
+        <source srcset="./images/desktop/team-1-1200@1x.jpg 1x,./images/desktop/team-1-1200@2x.jpg 2x"
+            media="(min-width: 1200px)">
+        <img src="./images/mobile/team-1-480@1x.jpg"
                alt="Игорь Демьяненко-Product Designer"
                width="270"/>
-               <div class="personal-information-container">
+               </picture> 
+                 <div class="personal-information-container">
                   <h3 class="personal-information-container__title">Игорь Демьяненко</h3>
                   <p class="personal-information-container__text">Product Designer</p>
+              
                <!-- Social media section -->
-                  <ul class="socials-list">
-                     <li class="socials-list__item">
-                        <a href="https://www.instagram.com/" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#instagram"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="socials-list__item">
-                        <a href="https://twitter.com/" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#twitter"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="socials-list__item">
-                        <a href="https://www.facebook.com/" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#facebook"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="socials-list__item">
-                        <a href="https://www.linkedin.com" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#linkedin"></use>
-                           </svg>
-                        </a>
-                     </li>
-                  </ul>
+               <ul class="socials-list">
+                  <li class="socials-list__item">
+                     <a href="https://www.instagram.com/" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="socials-list__item">
+                     <a href="https://twitter.com/" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="socials-list__item">
+                     <a href="https://www.facebook.com/" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="socials-list__item">
+                     <a href="https://www.linkedin.com" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
                </div>
          </li>
          <li class="team-section__list__items">
-               <img src="./images/img_team_2.jpg"
+            <picture>
+            <source srcset="./images/mobile/team-2-480@1x.jpg 1x,./images/mobile/team-2-480@2x.jpg 2x" 
+            media="(max-width: 767px)">                                                        
+        <source srcset="./images/tablet/team-2-768@1x.jpg 1x,./images/tablet/team-2-768@2x.jpg 2x"
+            media="(min-width: 768px) and (max-width: 1199px)">
+        <source srcset="./images/desktop/team-2-1200@1x.jpg 1x,./images/desktop/team-2-1200@2x.jpg 2x"
+            media="(min-width: 1200px)">
+        <img src="./images/mobile/team-2-480@1x.jpg"
                alt="Ольга Репина-Frontend Developer"
                width="270"/>
-               <div class="personal-information-container">
+             </picture>  
+             <div class="personal-information-container">
                <h3 class="personal-information-container__title">Ольга Репина</h3>
                <p class="personal-information-container__text">Frontend Developer</p>
                <!-- Social media section -->
-                  <ul class="socials-list">
-                     <li class="socials-list__item">
-                        <a href="https://www.instagram.com/" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#instagram"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="socials-list__item">
-                        <a href="https://twitter.com/" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#twitter"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="socials-list__item">
-                        <a href="https://www.facebook.com/" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#facebook"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="socials-list__item">
-                        <a href="https://www.linkedin.com" class="socials-list__item__link">
-                           <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#linkedin"></use>
-                           </svg>
-                        </a>
-                     </li>
-                  </ul>
+               <ul class="socials-list">
+                  <li class="socials-list__item">
+                     <a href="https://www.instagram.com/" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="socials-list__item">
+                     <a href="https://twitter.com/" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="socials-list__item">
+                     <a href="https://www.facebook.com/" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="socials-list__item">
+                     <a href="https://www.linkedin.com" class="socials-list__item__link">
+                        <svg width="20px" height="20px" class="socials-list__item__link__logo">
+                           <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
             </div>
          </li>
          <li class="team-section__list__items">
-               <img src="./images/img_team_3.jpg"
+            <picture>
+            <source srcset="./images/mobile/team-3-480@1x.jpg 1x,./images/mobile/team-3-480@2x.jpg 2x" 
+            media="(max-width: 767px)">                                                        
+        <source srcset="./images/tablet/team-3-768@1x.jpg 1x,./images/tablet/team-3-768@2x.jpg 2x"
+            media="(min-width: 768px) and (max-width: 1199px)">
+        <source srcset="./images/desktop/team-3-1200@1x.jpg 1x,./images/desktop/team-3-1200@2x.jpg 2x"
+            media="(min-width: 1200px)">
+        <img src="./images/mobile/team-3-480@1x.jpg"
                width="270"
                alt="Николай Тарасов-Marketing"/>
+               </picture>
                <div class="personal-information-container">
                <h3 class="personal-information-container__title">Николай Тарасов</h3>
                <p class="personal-information-container__text">Marketing</p>
@@ -226,28 +259,28 @@
                   <li class="socials-list__item">
                      <a href="https://www.instagram.com/" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#instagram"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="socials-list__item">
                      <a href="https://twitter.com/" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#twitter"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="socials-list__item">
                      <a href="https://www.facebook.com/" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#facebook"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="socials-list__item">
                      <a href="https://www.linkedin.com" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#linkedin"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
                         </svg>
                      </a>
                   </li>
@@ -255,9 +288,17 @@
          </div>
          </li>
          <li class="team-section__list__items">  
-               <img src="./images/img_team_4.jpg"
+            <picture>
+            <source srcset="./images/mobile/team-4-480@1x.jpg 1x,./images/mobile/team-4-480@2x.jpg 2x" 
+            media="(max-width: 767px)">                                                        
+        <source srcset="./images/tablet/team-4-768@1x.jpg 1x,./images/tablet/team-4-768@2x.jpg 2x"
+            media="(min-width: 768px) and (max-width: 1199px)">
+        <source srcset="./images/desktop/team-4-1200@1x.jpg 1x,./images/desktop/team-4-1200@2x.jpg 2x"
+            media="(min-width: 1200px)">
+        <img src="./images/mobile/team-4-480@1x.jpg"
                width="270"
                alt="Михаил Ермаков-UI Designer"/>
+               </picture>
                <div class="personal-information-container">
                <h3 class="personal-information-container__title">Михаил Ермаков</h3>
                <p class="personal-information-container__text">UI Designer</p>
@@ -266,28 +307,28 @@
                   <li class="socials-list__item">
                      <a href="https://www.instagram.com/" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#instagram"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="socials-list__item">
                      <a href="https://twitter.com/" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#twitter"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="socials-list__item">
                      <a href="https://www.facebook.com/" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#facebook"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="socials-list__item">
                      <a href="https://www.linkedin.com" class="socials-list__item__link">
                         <svg width="20px" height="20px" class="socials-list__item__link__logo">
-                           <use href="./images/icons.svg/symbol-defs.svg#linkedin"></use>
+                           <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
                         </svg>
                      </a>
                   </li>
@@ -306,7 +347,7 @@
          <li class="customers-section__list__item"> 
             <a href="#" class="customers-section__list__item__link"> 
                <svg class="customers-section__list__item__link__logo" width="170px" height="92px">
-                  <use href="./images/icons.svg/symbol-defs.svg#Logo-1"></use>
+                  <use href="./images/icons.svg/sprite.svg#client1"></use>
                </svg>
             </a>  
          </li>
@@ -314,7 +355,7 @@
          <li class="customers-section__list__item">
             <a href="#" class="customers-section__list__item__link"> 
                <svg class="customers-section__list__item__link__logo" width="170px" height="92px">
-                  <use href="./images/icons.svg/symbol-defs.svg#Logo-2"></use>
+                  <use href="./images/icons.svg/sprite.svg#client2"></use>
                </svg>
             </a>
          </li>
@@ -322,7 +363,7 @@
          <li class="customers-section__list__item">
             <a href="#" class="customers-section__list__item__link">
                <svg class="customers-section__list__item__link__logo" width="170px" height="92px">
-                  <use href="./images/icons.svg/symbol-defs.svg#Logo-3"></use>
+                  <use href="./images/icons.svg/sprite.svg#client3"></use>
                </svg>
             </a>
          </li>
@@ -330,7 +371,7 @@
          <li class="customers-section__list__item">
             <a href="#" class="customers-section__list__item__link">
                <svg class="customers-section__list__item__link__logo" width="170px" height="92px">
-                  <use href="./images/icons.svg/symbol-defs.svg#Logo-4"></use>
+                  <use href="./images/icons.svg/sprite.svg#client4"></use>
                </svg>
             </a>
          </li>
@@ -338,7 +379,7 @@
          <li class="customers-section__list__item">
             <a href="#" class="customers-section__list__item__link">
                <svg class="customers-section__list__item__link__logo" width="170px" height="92px">
-                  <use href="./images/icons.svg/symbol-defs.svg#Logo-5"></use>
+                  <use href="./images/icons.svg/sprite.svg#client5"></use>
                </svg>
             </a>
          </li>
@@ -346,7 +387,7 @@
          <li class="customers-section__list__item">
             <a href="#" class="customers-section__list__item__link">
                <svg class="customers-section__list__item__link__logo" width="170px" height="92px">
-                  <use href="./images/icons.svg/symbol-defs.svg#Logo-6"></use>
+                  <use href="./images/icons.svg/sprite.svg#client6"></use>
                </svg>
             </a>
          </li>
@@ -379,28 +420,28 @@
                      <li class="socials-footer-list__item">
                         <a href="https://www.instagram.com/" class="socials-footer-list__item__link">
                            <svg width="20px" height="20px" class="socials-footer-logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#instagram"></use>
+                              <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
                            </svg>
                         </a>
                      </li>
                      <li class="socials-footer-list__item">
                         <a href="https://twitter.com/" class="socials-footer-list__item__link">
                            <svg width="20px" height="20px" class="socials-footer-logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#twitter"></use>
+                              <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
                            </svg>
                         </a>
                      </li>
                      <li class="socials-footer-list__item">
                         <a href="https://www.facebook.com/" class="socials-footer-list__item__link">
                            <svg width="20px" height="20px" class="socials-footer-logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#facebook"></use>
+                              <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
                            </svg>
                         </a>
                      </li>
                      <li class="socials-footer-list__item">
                         <a href="https://linkedin.com/" class="socials-footer-list__item__link">
                            <svg width="20px" height="20px" class="socials-footer-logo">
-                              <use href="./images/icons.svg/symbol-defs.svg#linkedin"></use>
+                              <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
                            </svg>
                         </a>
                      </li>
@@ -416,7 +457,7 @@
                            id="email-subscribe" />
                         <button type="submit" class="emailing-submit-button">Подписаться
                            <svg width="24px" height="24px" class="emailing-submit-icon">
-                              <use href="./images/icons.svg/symbol-defs.svg#icon-send"></use>
+                              <use href="./images/icons.svg/sprite.svg#icon-check"></use>
                            </svg>
                         </button>
                      </div>
@@ -430,7 +471,7 @@
             <div class="modal">
                <button type="button" data-modal-close class="modal__close-button">
                   <svg class="modal__close-icon" width="18px" height="18px">
-                     <use href="./images/icons.svg/symbol-defs.svg#close"></use>
+                     <use href="./images/icons.svg/sprite.svg#close"></use>
                   </svg>
                </button>  
                <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
@@ -447,7 +488,7 @@
                         id="user-name"
                         />
                         <svg class="model__icon" width="18px" height="18px"> 
-                           <use href="./images/icons.svg/symbol-defs.svg#person"></use>
+                           <use href="./images/icons.svg/sprite.svg#person"></use>
                         </svg>
                      </div>
                  </div>
@@ -465,7 +506,7 @@
                            title="+380 (98) 111-11-11"
                         />
                         <svg class="model__icon" width="18px" height="18px">
-                           <use href="./images/icons.svg/symbol-defs.svg#phone"></use>
+                           <use href="./images/icons.svg/sprite.svg#phone"></use>
                         </svg>
                      </div>
                   </div>
@@ -480,7 +521,7 @@
                            id="user-mail"
                         />
                         <svg class="model__icon" width="18px" height="18px">
-                           <use href="./images/icons.svg/symbol-defs.svg#email"></use>
+                           <use href="./images/icons.svg/sprite.svg#email"></use>
                         </svg>
                      </div>
                   </div>
@@ -505,7 +546,7 @@
                   <label for="policy" class="modal__check-text"
                      ><span>
                         <svg class="modal__check-icon" width="16px" height="15px">
-                           <use href="./images/icons.svg/symbol-defs.svg#check-mark"></use>
+                           <use href="./images/icons.svg/sprite#icon-icon-send"></use>
                         </svg>      
                      </span> 
                      Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="modal__check-agreement"> Условия договора</a> 
@@ -516,6 +557,49 @@
                </form>
             </div>
          </div>
+
+
+
+         <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-btn menu-toggle js-close-menu">
+              <svg class="menu-btn-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-close"></use>
+              </svg>
+            </button>
+      
+            <ul class="mobile-nav">
+              <li><a href="" class="link">About</a></li>
+              <li><a href="" class="link">Products</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+              <li><a href="" class="link">Career</a></li>
+            </ul>
+            <!-- <div class="mobile-wrap"> -->
+            <ul class="mobile-contacts">
+              <li><a href="" class="link">About</a></li>
+              <li><a href="" class="link">Products</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+              <li><a href="" class="link">Career</a></li>
+            </ul>
+            <ul class="mobile-socials">
+              <li><a href="" class="link">About</a></li>
+              <li><a href="" class="link">Products</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+              <li><a href="" class="link">Career</a></li>
+            </ul>
+            <!-- </div> -->
+          </div>
+      
+          <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+          ></script>
+
+
+
+
       <script src="./js/modal.js"></script>
+      <script>src="./js/</script/menu.js">
    </body>
    </html>
